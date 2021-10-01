@@ -16,13 +16,13 @@ def foo(x):
 def longest_run(mylist, key):
     run_length = 0
     lengths = []
-        for x in range(0,len(mylist)):
-            if run_length >= 0 and mylist[x] == key:
-                run_length += 1
-            elif run_length >= 0 and mylist != key:
-                lengths.append(run_length)
-                run_length = 0
-        return max(lengths)
+    for x in range(0,len(mylist)):
+        if run_length >= 0 and mylist[x] == key:
+            run_length += 1
+        elif run_length >= 0 and mylist != key:
+            lengths.append(run_length)
+            run_length = 0
+    return max(lengths)
 
 
 class Result:
