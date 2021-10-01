@@ -19,6 +19,7 @@ def longest_run(mylist, key):
     for x in range(0,len(mylist)):
         if run_length >= 0 and mylist[x] == key:
             run_length += 1
+            lengths.append(run_length)
         elif run_length >= 0 and mylist != key:
             lengths.append(run_length)
             run_length = 0
